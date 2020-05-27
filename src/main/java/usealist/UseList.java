@@ -41,6 +41,8 @@ public class UseList {
 
 //    breakList(names);
 //    String s = (String)names.get(0);
+
+    // javap -c -cp <classpath> usealist.UseList
     String s = names.get(0);
     System.out.println("First name is " + names.get(2));
 
@@ -53,5 +55,10 @@ public class UseList {
     for (String str : sa) {
       System.out.println("> " + str);
     }
+
+    // Generics "don't work with" primitives, only ref types
+//    List<int> li;
+    List<Number> intList = new ArrayList<>();
+    intList.add(3L); // Autoboxing (and unboxing)
   }
 }
