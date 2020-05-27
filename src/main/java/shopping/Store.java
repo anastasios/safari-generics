@@ -9,5 +9,7 @@ public class Store {
 
     ClothingPair<Sock> ps2 = new ClothingPair<>(new Sock("Brown", 9), new Sock("Red", 9));
     System.out.println("pair 2 matches? " + ps2.match());
+
+    ClothingPair<Glove> pg;
   }
 }
